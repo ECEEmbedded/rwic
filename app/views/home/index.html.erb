@@ -1,0 +1,61 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">RedRover</a>
+    <ul class="nav">
+      <li class="active"><a href="#">Control Panel</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container-fluid container-padded">
+    <!-- Control signals -->
+	<div class="row-fluid">
+	  <div class="span12">
+          <div class="center">
+              <hr />
+              <h3>Control Signals</h3>
+              <button id="startSignal" class="btn btn-large btn-success">Start</button>
+              <hr />
+              <h3>Lap Signals </h3>
+              <button id="stopSignal" class="btn btn-large btn-danger">Finished Reached</button>
+              <button id="stopSignal" class="btn btn-large btn-success">New Lap Started</button>
+              <hr />
+          </div>
+      </div>
+    </div>
+
+    <!-- Debug output -->
+    <div class="row-fluid">
+	  <div class="span12">
+          <div id="log">
+              <hr />
+              <div class="center">
+                  <h3>Debug Output</h3>
+              </div>
+              <div id="logArea">
+                  <div id="subLogArea">
+                  </div>
+              </div>
+              <hr />
+          </div>
+      </div>
+    </div>
+
+  </div>  
+</div>
+
+<!-- Start options modal -->
+<div id="startOptionsModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Send Start Signal</h3>
+  </div>
+  <div class="modal-body">
+      <label class="checkbox">
+      <input id="courseIsALoop" type="checkbox"> This course is a loop
+    </label>
+  </div>
+  <div class="modal-footer">
+    <a href="#" data-dismiss="modal" class="btn">Close</a>
+    <a href="#" class="btn btn-primary">Send Start Signal</a>
+  </div>
+</div>
