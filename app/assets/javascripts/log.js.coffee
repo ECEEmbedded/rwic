@@ -12,7 +12,7 @@ $ ->
 
         height = $("#subLogArea h1").last().height()
 
-        totalHeight += height
+        totalHeight += height + 1
         if scrolling == 0
             if totalHeight >= $("#subLogArea").height()
                 scrolling = 1
